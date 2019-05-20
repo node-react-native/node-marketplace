@@ -1,0 +1,375 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-05-20T01:57:41.007Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
+			"created": 1553282097468,
+			"description": "",
+			"modified": 1553282097468,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_f2e7f62623e44ac39e5191911d341c1b",
+			"color": null,
+			"created": 1553282097497,
+			"data": {
+				"base_url": "http://localhost:3000",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjZGI2ZDdmN2IwY2RjNmEzZmM2MjkxNyIsImlhdCI6MTU1ODMxNTEwOSwiZXhwIjoxNTU4NDAxNTA5fQ.YMuYDB-RbYPawaeZkYuzsAYGSUvUZhrioyR6mS_pzas"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1553282097497,
+			"modified": 1558315127458,
+			"name": "New Environment",
+			"parentId": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_518ab60ad5cd49da9fe737e87f7b0442",
+			"cookies": [
+				{
+					"creation": "2019-03-22T19:16:23.675Z",
+					"domain": "dev.gamersclub.com.br",
+					"expires": "2019-04-21T19:16:23.000Z",
+					"hostOnly": false,
+					"httpOnly": true,
+					"id": "25370472363508756",
+					"key": "gclubsess_dev",
+					"lastAccessed": "2019-03-22T19:16:23.675Z",
+					"maxAge": 2592000,
+					"path": "/",
+					"value": "d62ebaf2cddfd814d19a86c1d0f756f14a36ada2"
+				}
+			],
+			"created": 1553282097501,
+			"modified": 1553282183676,
+			"name": "Default Jar",
+			"parentId": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_1e3b3dc4513f43e29c2385c9f786e148",
+			"created": 1557801089088,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1557801089088,
+			"modified": 1557801089088,
+			"name": "gonode-marketplace",
+			"parentId": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_6fbc6a9b86a043ea892fb9a3d97047f8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"medal\": 16,\n\t\"ddi\": 55,\n\t\"phone\": \"15991011084\",\n\t\"via\": 1\n}"
+			},
+			"created": 1553282177238,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_87139eb39aa64343b68addc59baacb38",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1553282177238,
+			"method": "POST",
+			"modified": 1553870829716,
+			"name": "Pinpoint Phone Send",
+			"parameters": [],
+			"parentId": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://dev.gamersclub.com.br/api/player/pinpoint/phone/send",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a27dab768ed249278934409037887fd3",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"medal\": 16,\n\t\"code\": 5266\n}"
+			},
+			"created": 1553553348558,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b2011e7b16a14819b56fc93a1f7ddd59",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1553553348558,
+			"method": "POST",
+			"modified": 1553893100377,
+			"name": "Pinpoint Code Check",
+			"parameters": [],
+			"parentId": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://dev.gamersclub.com.br/api/player/pinpoint/code/check",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_f0f256a726ae43fd9c99cd28f133470c",
+			"created": 1557885144420,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1557885144420,
+			"modified": 1557885144420,
+			"name": "User",
+			"parentId": "fld_1e3b3dc4513f43e29c2385c9f786e148",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_68fc5f5f86924ec793529253459c4f1c",
+			"created": 1557885161850,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1557885161850,
+			"modified": 1557885161850,
+			"name": "Session",
+			"parentId": "fld_1e3b3dc4513f43e29c2385c9f786e148",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_c823b0daab844134b6288c78f4fa53fe",
+			"created": 1558314868801,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1558314868801,
+			"modified": 1558314868801,
+			"name": "Ads",
+			"parentId": "fld_1e3b3dc4513f43e29c2385c9f786e148",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_08b7e2c3a1b94a358029e1463ecef964",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Vinicius Serpa\",\n\t\"email\": \"vinicius-serpa@live.com\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1557801121222,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1ccd386bad9f460f8c0087c9c1e70cf2",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1557864138620.5,
+			"method": "POST",
+			"modified": 1557886902573,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_f0f256a726ae43fd9c99cd28f133470c",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1e53f691c98647c385f1f8b27f32c602",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"vinicius-serpa@live.com\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1557885186428,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4318ad699d44408c8f51286536d170b4",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1557885186428,
+			"method": "POST",
+			"modified": 1558315105298,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_68fc5f5f86924ec793529253459c4f1c",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/sessions",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ec2f13e79d704ce0aa9cb15bbce49f6d",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1558314878111,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1558314878111,
+			"method": "GET",
+			"modified": 1558317059248,
+			"name": "Index",
+			"parameters": [],
+			"parentId": "fld_c823b0daab844134b6288c78f4fa53fe",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/ads?title=ReaC",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f23274f124fa49ceb1e315b94410e06e",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1558315148665,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1558100032269.5,
+			"method": "GET",
+			"modified": 1558315402687,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_c823b0daab844134b6288c78f4fa53fe",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/ads/5ce201239a23a002e73ddf36",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c23a71f8ff8b428d998ea58ef355c51f",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Curso de React\",\n\t\"description\": \"Curso para vender arte na praia\",\n\t\"price\": 250\n}"
+			},
+			"created": 1558315187346,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_132cda9ef9544f139c6008892de5e0d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1557992609348.75,
+			"method": "POST",
+			"modified": 1558316888384,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_c823b0daab844134b6288c78f4fa53fe",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/ads",
+			"_type": "request"
+		},
+		{
+			"_id": "req_015865a5fca24ff68ab842eb779a5152",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"price\": 2500\n}"
+			},
+			"created": 1558315414212,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_132cda9ef9544f139c6008892de5e0d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1557938897888.375,
+			"method": "PUT",
+			"modified": 1558315455092,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_c823b0daab844134b6288c78f4fa53fe",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/ads/5ce201239a23a002e73ddf36",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2874eb3c77b5490899e19e5546e1ff38",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1558315465501,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1557912042158.1875,
+			"method": "DELETE",
+			"modified": 1558315505154,
+			"name": "Destroy",
+			"parameters": [],
+			"parentId": "fld_c823b0daab844134b6288c78f4fa53fe",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/ads/5ce201239a23a002e73ddf36",
+			"_type": "request"
+		}
+	]
+}
