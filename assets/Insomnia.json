@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-05-20T01:57:41.007Z",
+	"__export_date": "2019-05-21T03:46:26.269Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -19,11 +19,11 @@
 			"created": 1553282097497,
 			"data": {
 				"base_url": "http://localhost:3000",
-				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjZGI2ZDdmN2IwY2RjNmEzZmM2MjkxNyIsImlhdCI6MTU1ODMxNTEwOSwiZXhwIjoxNTU4NDAxNTA5fQ.YMuYDB-RbYPawaeZkYuzsAYGSUvUZhrioyR6mS_pzas"
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjZGI2ZDdmN2IwY2RjNmEzZmM2MjkxNyIsImlhdCI6MTU1ODQxMDExMywiZXhwIjoxNTU4NDk2NTEzfQ.aSj88Lq6ycLow28bh3kxFxI7fi4xdD11oWmMZ3_Edrw"
 			},
 			"isPrivate": false,
 			"metaSortKey": 1553282097497,
-			"modified": 1558315127458,
+			"modified": 1558410148370,
 			"name": "New Environment",
 			"parentId": "wrk_7ca5f3009ccc439dac2b1de2213d14fb",
 			"_type": "environment"
@@ -156,6 +156,17 @@
 			"metaSortKey": -1558314868801,
 			"modified": 1558314868801,
 			"name": "Ads",
+			"parentId": "fld_1e3b3dc4513f43e29c2385c9f786e148",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_0759950dbc6043f8b1843775c9bcab6c",
+			"created": 1558409951402,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1558409951402,
+			"modified": 1558409951402,
+			"name": "Purchase",
 			"parentId": "fld_1e3b3dc4513f43e29c2385c9f786e148",
 			"_type": "request_group"
 		},
@@ -369,6 +380,41 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ base_url  }}/ads/5ce201239a23a002e73ddf36",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7ec2b24936664cddb7639c7a4dda18ec",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"ad\": \"5ce2075956ed182a07e5eef5\",\n\t\"content\": \"Testando solicitação de compra\"\n}"
+			},
+			"created": 1558409971129,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_60f295e25ed443fe8d53aa817c210785",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1558409971129,
+			"method": "POST",
+			"modified": 1558410289571,
+			"name": "Store",
+			"parameters": [],
+			"parentId": "fld_0759950dbc6043f8b1843775c9bcab6c",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/purchases",
 			"_type": "request"
 		}
 	]

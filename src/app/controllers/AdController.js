@@ -47,7 +47,7 @@ class AdController {
   }
 
   async destroy (req, res) {
-    const ad = await Ad.findByIdAndDelete(req.params.id)
+    await Ad.findByIdAndDelete(req.params.id)
     return res.send()
   }
 }
