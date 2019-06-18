@@ -6,7 +6,7 @@ REST API backend with NodeJS
 - Install Docker Desktop
 - Install Node
 - Install Yarn
-- Install Insomnia and importa data from assets
+- Install Insomnia and import data from assets
 
 # run
 
